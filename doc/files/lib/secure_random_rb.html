@@ -1,0 +1,120 @@
+
+<html><head>
+  <title>File: secure_random.rb</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript" language="JavaScript">
+  <!--
+  function popCode(url) {
+    parent.frames.source.location = url
+  }
+  //-->
+  </script>
+</head>
+<body bgcolor="white">
+
+
+<table width="100%">
+ <tr class="title-row">
+ <td><table width="100%"><tr>
+   <td class="big-title-font" colspan="2"><font size="-3"><b>File</b><br /></font>secure_random.rb</td>
+   <td align="right"><table cellspacing="0" cellpadding="2">
+         <tr>
+           <td  class="small-title-font">Path:</td>
+           <td class="small-title-font">lib/secure_random.rb
+           </td>
+         </tr>
+         <tr>
+           <td class="small-title-font">Modified:</td>
+           <td class="small-title-font">Tue Mar 10 12:25:38 -0700 2009</td>
+         </tr>
+        </table>
+    </td></tr></table></td>
+  </tr>
+</table><br />
+  <!-- banner header -->
+
+
+<div class="indent">
+<div class="description">
+<h1>Ruby Gem: secure random number generator interface for Ruby 1.86 backported from 1.8.7</h1>
+<p>
+This gem is intended for use with Ruby 1.8.6 only.
+</p>
+<p>
+This gem is a backport of the built-in securerandom method from Ruby 1.8.7.
+</p>
+<p>
+This library is an interface for secure random number generator which is
+suitable for generating session key in HTTP cookies, etc.
+</p>
+<p>
+It supports following secure random number generators.
+</p>
+<ul>
+<li>openssl
+
+</li>
+<li>/dev/urandom
+
+</li>
+</ul>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.hex(10) =&gt; &quot;52750b30ffbc7de3b362&quot;
+  SecureRandom.hex(10) =&gt; &quot;92b15d6c8dc4beb5f559&quot;
+  SecureRandom.hex(11) =&gt; &quot;6aca1b5c58e4863e6b81b8&quot;
+  SecureRandom.hex(12) =&gt; &quot;94b2fff3e7fd9b9c391a2306&quot;
+  SecureRandom.hex(13) =&gt; &quot;39b290146bea6ce975c37cfc23&quot;
+</pre>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.base64(10) =&gt; &quot;EcmTPZwWRAozdA==&quot;
+  SecureRandom.base64(10) =&gt; &quot;9b0nsevdwNuM/w==&quot;
+  SecureRandom.base64(10) =&gt; &quot;KO1nIU+p9DKxGg==&quot;
+  SecureRandom.base64(11) =&gt; &quot;l7XEiFja+8EKEtY=&quot;
+  SecureRandom.base64(12) =&gt; &quot;7kJSM/MzBJI+75j8&quot;
+  SecureRandom.base64(13) =&gt; &quot;vKLJ0tXBHqQOuIcSIg==&quot;
+</pre>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.random_bytes(10) =&gt; &quot;\016\t{\370g\310pbr\301&quot;
+  SecureRandom.random_bytes(10) =&gt; &quot;\323U\030TO\234\357\020\a\337&quot;
+</pre>
+
+</div>
+</div>
+
+<div class="indent">
+<div class="requires">
+<table cellpadding="5" width="100%">
+<tr><td class="tablesubtitle">Required files</td></tr>
+</table><br />
+<div class="name-list">
+openssl
+</div>
+</div>
+</div>
+
+
+
+
+    <div class="indent">
+    <div id="section">
+
+
+
+  
+
+  <!-- method descriptions -->
+
+
+</div><!-- indent -->
+</body>
+</html>
