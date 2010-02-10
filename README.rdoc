@@ -1,3 +1,4 @@
+
 = Ruby Gem: secure random number generator interface for Ruby 1.86 backported from 1.8.7
 
 This gem is intended for use with Ruby 1.8.6 only.
@@ -9,8 +10,8 @@ suitable for generating session key in HTTP cookies, etc.
 
 It supports following secure random number generators.
 
-* openssl
-* /dev/urandom
+  * openssl
+  * /dev/urandom
 
 Examples
   SecureRandom.hex(10) => "52750b30ffbc7de3b362"

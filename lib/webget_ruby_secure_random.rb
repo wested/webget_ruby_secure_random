@@ -1,37 +1,40 @@
-# = Ruby Gem: secure random number generator interface for Ruby 1.86 backported from 1.8.7
-#
-# This gem is intended for use with Ruby 1.8.6 only.
-#
-# This gem is a backport of the built-in securerandom method from Ruby 1.8.7.
-#
-# This library is an interface for secure random number generator which is
-# suitable for generating session key in HTTP cookies, etc.
-#
-# It supports following secure random number generators.
-#
-# * openssl
-# * /dev/urandom
-#
-# Examples
-#   SecureRandom.hex(10) => "52750b30ffbc7de3b362"
-#   SecureRandom.hex(10) => "92b15d6c8dc4beb5f559"
-#   SecureRandom.hex(11) => "6aca1b5c58e4863e6b81b8"
-#   SecureRandom.hex(12) => "94b2fff3e7fd9b9c391a2306"
-#   SecureRandom.hex(13) => "39b290146bea6ce975c37cfc23"
-#
-# Examples
-#   SecureRandom.base64(10) => "EcmTPZwWRAozdA=="
-#   SecureRandom.base64(10) => "9b0nsevdwNuM/w=="
-#   SecureRandom.base64(10) => "KO1nIU+p9DKxGg=="
-#   SecureRandom.base64(11) => "l7XEiFja+8EKEtY="
-#   SecureRandom.base64(12) => "7kJSM/MzBJI+75j8"
-#   SecureRandom.base64(13) => "vKLJ0tXBHqQOuIcSIg=="
-#
-# Examples
-#   SecureRandom.random_bytes(10) => "\016\t{\370g\310pbr\301"
-#   SecureRandom.random_bytes(10) => "\323U\030TO\234\357\020\a\337"
-#
-##
+=begin rdoc
+
+= Ruby Gem: secure random number generator interface for Ruby 1.86 backported from 1.8.7
+
+This gem is intended for use with Ruby 1.8.6 only.
+
+This gem is a backport of the built-in securerandom method from Ruby 1.8.7.
+
+This library is an interface for secure random number generator which is
+suitable for generating session key in HTTP cookies, etc.
+
+It supports following secure random number generators.
+
+  * openssl
+  * /dev/urandom
+
+Examples
+  SecureRandom.hex(10) => "52750b30ffbc7de3b362"
+  SecureRandom.hex(10) => "92b15d6c8dc4beb5f559"
+  SecureRandom.hex(11) => "6aca1b5c58e4863e6b81b8"
+  SecureRandom.hex(12) => "94b2fff3e7fd9b9c391a2306"
+  SecureRandom.hex(13) => "39b290146bea6ce975c37cfc23"
+
+Examples
+  SecureRandom.base64(10) => "EcmTPZwWRAozdA=="
+  SecureRandom.base64(10) => "9b0nsevdwNuM/w=="
+  SecureRandom.base64(10) => "KO1nIU+p9DKxGg=="
+  SecureRandom.base64(11) => "l7XEiFja+8EKEtY="
+  SecureRandom.base64(12) => "7kJSM/MzBJI+75j8"
+  SecureRandom.base64(13) => "vKLJ0tXBHqQOuIcSIg=="
+
+Examples
+  SecureRandom.random_bytes(10) => "\016\t{\370g\310pbr\301"
+  SecureRandom.random_bytes(10) => "\323U\030TO\234\357\020\a\337"
+
+=end
+
 
 begin
   require 'openssl'
@@ -138,7 +141,7 @@ module SecureRandom
 
 end
 
-# Added by joelparkerhenderson@gmail.com for backwards compatibility with Ruby 1.8
+Added by joelparkerhenderson@gmail.com for backwards compatibility with Ruby 1.8
 class Fixnum
  def ord
   return self

@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'secure_random'
+require 'webget_ruby_secure_random'
 
 class Testing < Test::Unit::TestCase
 
