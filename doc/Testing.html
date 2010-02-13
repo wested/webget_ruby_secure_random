@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Testing</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./test/unit/webget_ruby_secure_random_test_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="test/unit/webget_ruby_secure_random_test.rb">test/unit/webget_ruby_secure_random_test.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Test::Unit::TestCase</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000003">#test_base64</a></li>
+					
+					<li><a href="#M000002">#test_hex</a></li>
+					
+					<li><a href="#M000001">#test_random_bytes</a></li>
+					
+					<li><a href="#M000005">#test_random_number_float</a></li>
+					
+					<li><a href="#M000004">#test_random_number_integer</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./INSTALL_txt.html">INSTALL.txt</a></li>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./webget_ruby_secure_random_gemspec.html">webget_ruby_secure_random.gemspec</a></li>
+				
+					<li class="file"><a href="./webget_ruby_secure_random_sha512_txt.html">webget_ruby_secure_random.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Fixnum.html">Fixnum</a></li>
+				
+					<li><a href="./SecureRandom.html">SecureRandom</a></li>
+				
+					<li><a href="./Testing.html">Testing</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Testing</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="test-base--method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_base64</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-base--source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/webget_ruby_secure_random_test.rb, line 22</span>
+22:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_base64</span>
+23:   <span class="ruby-identifier">n</span>=<span class="ruby-value">16</span>
+24:   <span class="ruby-value">20</span>.<span class="ruby-identifier">times</span>{
+25:    <span class="ruby-identifier">x</span>=<span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">base64</span>(<span class="ruby-identifier">n</span>)
+26:    <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">&gt;=</span><span class="ruby-identifier">n</span>,<span class="ruby-node">&quot;x length #{x.length} &gt;= n #{n}&quot;</span>)
+27:    <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">&lt;</span><span class="ruby-value">2</span><span class="ruby-operator">*</span><span class="ruby-identifier">n</span>,<span class="ruby-node">&quot;x length #{x.length} &lt; 2n #{2*n}&quot;</span>)
+28:   }
+29:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-hex-method" class="method-detail ">
+				<a name="M000002"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_hex</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-hex-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/webget_ruby_secure_random_test.rb, line 14</span>
+14:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_hex</span>
+15:   <span class="ruby-identifier">n</span>=<span class="ruby-value">16</span>
+16:   <span class="ruby-value">20</span>.<span class="ruby-identifier">times</span>{
+17:    <span class="ruby-identifier">x</span>=<span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">hex</span>(<span class="ruby-identifier">n</span>)
+18:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">length</span>,<span class="ruby-value">2</span><span class="ruby-operator">*</span><span class="ruby-identifier">n</span>)
+19:   }
+20:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-random-bytes-method" class="method-detail ">
+				<a name="M000001"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_random_bytes</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-random-bytes-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/webget_ruby_secure_random_test.rb, line 6</span>
+ 6:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_random_bytes</span>
+ 7:   <span class="ruby-identifier">n</span>=<span class="ruby-value">16</span>
+ 8:   <span class="ruby-value">20</span>.<span class="ruby-identifier">times</span>{
+ 9:    <span class="ruby-identifier">x</span>=<span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">random_bytes</span>(<span class="ruby-value">16</span>)
+10:    <span class="ruby-identifier">assert_equal</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">length</span>,<span class="ruby-identifier">n</span>)
+11:   }
+12:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-random-number-float-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_random_number_float</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-random-number-float-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/webget_ruby_secure_random_test.rb, line 40</span>
+40:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_random_number_float</span>
+41:   <span class="ruby-value">20</span>.<span class="ruby-identifier">times</span>{
+42:    <span class="ruby-identifier">x</span>=<span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">random_number</span>
+43:    <span class="ruby-identifier">assert</span>(<span class="ruby-value">0</span><span class="ruby-operator">&lt;=</span><span class="ruby-identifier">x</span>,<span class="ruby-value str">&quot;0&lt;=x&quot;</span>)
+44:    <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">&lt;</span><span class="ruby-value">1</span>,<span class="ruby-value str">&quot;x&lt;1&quot;</span>)
+45:   }
+46:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="test-random-number-integer-method" class="method-detail ">
+				<a name="M000004"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">test_random_number_integer</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="test-random-number-integer-source">
+<pre>
+    <span class="ruby-comment cmt"># File test/unit/webget_ruby_secure_random_test.rb, line 31</span>
+31:  <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">test_random_number_integer</span>
+32:   <span class="ruby-identifier">n</span>=<span class="ruby-value">16</span>
+33:   <span class="ruby-value">20</span>.<span class="ruby-identifier">times</span>{
+34:    <span class="ruby-identifier">x</span>=<span class="ruby-constant">SecureRandom</span>.<span class="ruby-identifier">random_number</span>(<span class="ruby-identifier">n</span>)
+35:    <span class="ruby-identifier">assert</span>(<span class="ruby-value">0</span><span class="ruby-operator">&lt;=</span><span class="ruby-identifier">x</span>,<span class="ruby-value str">&quot;0&lt;=x&quot;</span>)
+36:    <span class="ruby-identifier">assert</span>(<span class="ruby-identifier">x</span><span class="ruby-operator">&lt;</span><span class="ruby-identifier">n</span>,<span class="ruby-value str">&quot;x&lt;n&quot;</span>)
+37:   }
+38:  <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

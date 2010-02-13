@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: webget_ruby_secure_random.rb [webget_ruby_secure_random]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+	<div id="metadata">
+		<dl>
+			<dt class="modified-date">Last Modified</dt>
+			<dd class="modified-date">2010-02-12 21:27:06 -0800</dd>
+
+			
+			<dt class="requires">Requires</dt>
+			<dd class="requires">
+				<ul>
+				
+					<li>openssl</li>
+				
+				</ul>
+			</dd>
+			
+
+			
+		</dl>
+	</div>
+
+	<div id="documentation">
+		
+		<div class="description">
+			<h2>Description</h2>
+			<h1>WebGet Ruby Gem: secure random number generator interface for Ruby 1.86 backported from 1.8.7</h1>
+<table>
+<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
+
+</td></tr>
+<tr><td valign="top">Copyright:</td><td>Copyright the original author; I merely made it into a gem.
+
+</td></tr>
+<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
+
+</td></tr>
+<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
+
+</td></tr>
+</table>
+<p>
+This gem is intended for use with Ruby 1.8.6 only.
+</p>
+<p>
+This gem is a backport of the built-in securerandom method from Ruby 1.8.7.
+</p>
+<p>
+This library is an interface for secure random number generator which is
+suitable for generating session key in HTTP cookies, etc.
+</p>
+<p>
+It supports following secure random number generators.
+</p>
+<pre>
+  * openssl
+  * /dev/urandom
+</pre>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.hex(10) =&gt; &quot;52750b30ffbc7de3b362&quot;
+  SecureRandom.hex(10) =&gt; &quot;92b15d6c8dc4beb5f559&quot;
+  SecureRandom.hex(11) =&gt; &quot;6aca1b5c58e4863e6b81b8&quot;
+  SecureRandom.hex(12) =&gt; &quot;94b2fff3e7fd9b9c391a2306&quot;
+  SecureRandom.hex(13) =&gt; &quot;39b290146bea6ce975c37cfc23&quot;
+</pre>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.base64(10) =&gt; &quot;EcmTPZwWRAozdA==&quot;
+  SecureRandom.base64(10) =&gt; &quot;9b0nsevdwNuM/w==&quot;
+  SecureRandom.base64(10) =&gt; &quot;KO1nIU+p9DKxGg==&quot;
+  SecureRandom.base64(11) =&gt; &quot;l7XEiFja+8EKEtY=&quot;
+  SecureRandom.base64(12) =&gt; &quot;7kJSM/MzBJI+75j8&quot;
+  SecureRandom.base64(13) =&gt; &quot;vKLJ0tXBHqQOuIcSIg==&quot;
+</pre>
+<p>
+Examples
+</p>
+<pre>
+  SecureRandom.random_bytes(10) =&gt; &quot;\016\t{\370g\310pbr\301&quot;
+  SecureRandom.random_bytes(10) =&gt; &quot;\323U\030TO\234\357\020\a\337&quot;
+</pre>
+
+		</div>
+		
+	</div>
+</body>
+</html>
+
