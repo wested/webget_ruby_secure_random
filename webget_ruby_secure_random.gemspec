@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
 
   s.name              = "webget_ruby_secure_random"
   s.summary           = "WebGet Ruby Gem: secure random number method for Ruby 1.8.6"
-  s.version           = "1.1.6"
+  s.version           = "1.1.8"
   s.author            = "WebGet"
   s.email             = "webget@webget.com"
   s.homepage          = "http://webget.com/"
