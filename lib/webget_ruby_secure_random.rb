@@ -146,7 +146,7 @@ module SecureRandom
 
 end
 
-Added by joelparkerhenderson@gmail.com for backwards compatibility with Ruby 1.8
+# Added by joelparkerhenderson@gmail.com for backwards compatibility with Ruby 1.8
 class Fixnum
  def ord
   return self
